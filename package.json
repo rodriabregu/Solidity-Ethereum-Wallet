@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "lite-server": "^2.6.1"
+  },
+  "name": "firstcontract",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodriabregu/Solidity-Ethereum-Wallet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodriabregu/Solidity-Ethereum-Wallet/issues"
+  },
+  "homepage": "https://github.com/rodriabregu/Solidity-Ethereum-Wallet#readme",
+  "description": ""
+}
