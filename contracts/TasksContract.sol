@@ -17,6 +17,8 @@ contract TasksContract {
         uint createAt
     );
 
+    event TaskToggleDone(uint id, bool done);
+
     struct Task {
         uint256 id;
         string title;
@@ -37,5 +39,6 @@ contract TasksContract {
         Task memory _task = tasks[_id];
         _task.done = !_task.done;
         tasks[_id] = _task;
+        emit TaskToggleDone(_id, _task.done);
     }
 }

@@ -35,4 +35,13 @@ contract("TasksContract", () => {
         assert.equal(taskEvent.done, false);
     });
 
+    it('check toggle done status', async () => {
+        const resultToggle = await this.tasksContract.toggleDone(1);
+        const taskEvent = resultToggle.logs[0].args;
+        const task = await this.tasksContract.tasks(1);
+        assert.equal(task.done, true);
+        assert.equal(taskEvent.done, true);
+        assert.equal(taskEvent.id, 1);
+    });
+
 });
